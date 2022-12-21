@@ -27,7 +27,7 @@ jobs:
           name: install dependencies
           command: pip install -r requirements.txt
       - run:
-          command: pytest
+          command: pytest --verbose
           name: Run Unit Tests
 workflows:
   build_test_deploy:
